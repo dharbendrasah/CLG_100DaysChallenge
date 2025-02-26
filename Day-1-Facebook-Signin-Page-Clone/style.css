@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "SFProDisplay-Regular";
+    src: url("./sf-pro-display/SFPRODISPLAYREGULAR.OTF")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    background-color: #F2F4F7;
+}
+
+.container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.left-part {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-part img {
+    width: 300px;
+    margin-left: -2.7rem;
+}
+
+.left-part p {
+    font-size: 2.8rem;
+    font-family: "SFProDisplay-Regular";
+    font-weight: 500;
+    color: #1C1E21;
+}
+
+.right-part {
+    width: 400px;
+}
+
+.form-wrapper {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.form input,
+.form button {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1.4rem 1.6rem;
+    font-size: 1.6rem;
+}
+
+.form button {
+    background-color: #1877F2;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .password {
+    padding-right: 5rem;
+}
+
+.password-toogle-btn-icon {
+    font-size: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+}
+
+.forgot-password-btn {
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #1877F2;
+}
+
+.forgot-password-btn:hover {
+    text-decoration: underline;
+}
+
+.create-acc-btn {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1.4rem 1.6rem;
+    background-color: #36A420;
+    color: white; 
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right-part > p {
+    font-size: 1.4rem;
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.create-page-btn {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .left-part {
+        width: 100%;
+        align-items: center;
+    }
+
+    .left-part p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .right-part {
+        width: 100%;
+    }
+}

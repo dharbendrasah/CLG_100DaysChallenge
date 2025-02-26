@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meat charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Validator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="main">
+
+    <header class="header">
+      <div class="header-wraper container">
+        <div class="logo-title">
+          <img src="./assets/email.svg" alt="email-logo" class="logo"/>
+          <h2 class="title">iValidator</h2>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="content-section">
+      <div class="content-section-wrapper container">
+        <div class="validation-box">
+          <h1 class="title">Enter Your Email to Validate</h1>
+          <form class="form" id="form" autocomplete="off">
+            <input name="email" type="email" required placeholder="example@gmail.com" class="email">
+            <button class="submit-btn">Validate Email</button>
+          </form>
+        </div>
+          
+        <div class="results-container" id="results-container">
+          <img class="loader" id="loader" src="./assets/loader.png!bw700" alt="loader" />
+          <h1 class="title" id="result-title"></h1>
+          <div class="result" id="result">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-logo-title">
+          <img src="./assets/email.svg" alt="logo" class="footer-logo">
+          <p class="footer-title">iValidator</p>
+        </div>
+        <p class="desc">Made with ❤️ by <a href="#">Dharbendra Sah</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

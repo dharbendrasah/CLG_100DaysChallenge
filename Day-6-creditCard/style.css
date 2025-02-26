@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: #121321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main::before {
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #645ce0, #f3f5f5);
+    position: absolute; 
+    transform: translate(-190px, -80px);
+    z-index: -1;
+}
+
+#main::after {
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #db4925, #f3f5f5);
+    position: absolute;
+    transform: translate(170px, 80px);
+    z-index: -1;
+}
+
+.card {
+    width: 450px;
+    min-height: 200px;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(30px);
+    border: 1px solid #ccccccb8;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mastercard-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.mastercard-logo-container img {
+    width: 90px;
+}
+
+.mastercard-logo-container p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.chip-logo {
+    width: 60px;
+}
+
+.content {
+    display: flex;  
+    justify-content: space-between;
+    align-items: end;
+    font-size: 1.1rem;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-number-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}

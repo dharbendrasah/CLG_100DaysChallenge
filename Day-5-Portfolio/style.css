@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/background.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1180px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar-wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links-container .close-btn {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items {
+    font-weight: 600;
+}
+
+.nav-items a {
+    transition: 0.5s;
+}
+
+.nav-items:first-child a {
+    color: orangered;
+    padding: 0.01rem;
+    border-bottom: 2px solid orangered;
+}
+
+.nav-items a:hover {
+    color: orangered; 
+}
+
+.acc-btn {
+    outline: none;
+    border: none; 
+    background-color: black;
+    color: white;   
+    padding: 0.7rem 1.5rem;
+    border-radius: 10rem;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    cursor: pointer; 
+    transition: 0.5s linear;   
+}
+
+.acc-btn label {
+    cursor: pointer;
+}
+
+.acc-btn i {
+    font-size: 1.3rem;
+}
+
+.acc-btn:hover {
+    background-color: orangered;
+}
+
+.header-wrapper {
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.profile-img {
+    width: 350px;  
+    height: 350px; 
+    transition: 0.5s linear; 
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.header-wrapper .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-wrapper .title {
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.3rem 1.5rem;
+    border-radius: 10rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.header-wrapper .name {
+    font-size: 3.2rem;
+}
+
+.header-wrapper .tagline {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.header-wrapper .btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-wrapper .btn {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-wrapper .cv-btn {
+    background-color: orangered;
+    color: white;
+}
+
+.header-wrapper .cv-btn:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+.header-wrapper .hire-me-btn {
+    border-color: black;
+    background-color: transparent;
+}
+
+.header-wrapper .hire-me-btn:hover {
+    background-color: orangered;
+    color: white;
+    border-color: transparent;
+}
+
+.footer-wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-wrapper p {
+    font-weight: 500;
+}
+
+.footer-wrapper .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-wrapper img {
+    width: 20px;
+}
+
+.footer-wrapper a {
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 10rem;
+    transition: 0.5s;
+}
+
+.footer-wrapper a:hover {
+    transform: scale(1.5);
+    background-color: transparent;
+}
+
+@media screen and (max-width: 960px) {
+    .menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .nav-links-container {
+        position: absolute;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        transition: 0.3s linear;
+        background-color: #000;
+    }
+
+    .nav-links {
+        margin-top: 3rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .nav-items {
+        padding: 0.7rem 1rem;
+        border-radius: 6px;
+        border: 1px solid #cccccc71;
+    }
+
+    .nav-items:first-child a {
+        border: none;
+    }
+
+    .nav-links a {
+        display: block;
+        color: white;
+    }
+
+    .navbar .title {
+        display: none;
+    }
+
+    .nav-links-container .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.7rem;
+        color: rgba(255, 255, 255, 0.66);
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header-wrapper {
+        height: calc(100vh - 250px);
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-wrapper .content {
+        width: 100%;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .header-wrapper .btn {
+        margin-top: 1rem;
+    }
+
+    .header-wrapper .title {
+        font-size: 0.7rem;
+    }
+
+    .header-wrapper .tagline {
+        text-align: justify;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* .header-wrapper .title {
+        font-size: 0.7rem;
+    }
+
+    .header-wrapper .name {
+        font-size: 2rem;
+    }
+
+    .header-wrapper .tagline {
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+    } */
+
+    .header-wrapper .name {
+        font-size: 2rem;
+    }
+
+    .header-wrapper .tagline {
+        font-size: 0.7rem;
+    }
+}

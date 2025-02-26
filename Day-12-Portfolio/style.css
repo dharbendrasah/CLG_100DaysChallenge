@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1180px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.nav {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+
+.nav-wrapper {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-wrapper .logo {
+  font-size: 1.5rem;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-items a {
+  color: black;
+  font-weight: 600;
+}
+
+.nav-items .login-btn {
+  background-color: royalblue;
+  color: white;
+  padding: 0.7rem 1.7rem;
+  border-radius: 4px;
+}
+
+.menu-btn {
+  display: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* __________________ hero section styling ________________ */
+.hero-wrapper {
+  height: calc(100vh - 120px);
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.hero-image-container {
+  order: 1;
+  width: 50%;
+}
+
+.hero-image {
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content .heading {
+  font-size: 3vw;  
+  line-height: 2.5rem;
+}
+
+.hero-content .inner-heading {
+  color: royalblue;
+  display: inline-block;
+}
+
+.hero-content .para {
+  color: gray;  
+  font-size: 1.2vw;
+  margin-block: 1.5rem;
+}
+
+.talk-skills-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.talk-skills-btn .btn {
+  font-size: 1;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid royalblue;
+  padding: 0.7rem 1.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.talk-btn {
+  background-color: royalblue;
+  color: white;
+}
+
+.skills-btn {
+  background-color: transparent;
+  color: royalblue;
+}
+
+/* ____________________ skills section styling ____________________ */
+.skills {
+  min-height: 100vh;
+  /* background-color: bisque; */
+}
+
+.skills-wrapper {
+  padding: 2rem 0;
+}
+
+.skills-wrapper .heading {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.skillsets {
+  width: 46%;
+  margin-top: 5rem;
+}
+
+.skillsets h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skillsets p {
+  color: gray;
+  font-size: 14px;
+}
+
+.skills-cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 450px));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skills-card {
+  padding: 2rem 1.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-image: linear-gradient(130deg, #fff, #b3b8bc63);
+}
+
+.skills-card .logo-percentage,
+.skills-card .title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.skills-card .title {
+  margin-block: 1rem;
+}
+
+.skills-card .para {
+  color: gray;
+}
+
+/* ___________________ footer section styling ___________________ */
+.footer {
+  background-color: #0F1320;
+}
+
+.footer-wrapper {
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-wrapper .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-wrapper i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-wrapper .name {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ______________ media query ______________ */
+@media screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-items {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+
+    padding: 1rem;
+    background-color: #0F1320;
+    flex-direction: column;
+
+    transition: 0.3s linear;
+  }
+
+  .nav-item a {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    border: 1px solid #cccccc88;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    text-align: left;
+  }
+
+  .nav-items .login-btn {
+    padding: 0.7rem 1rem;
+    background-color: transparent;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .hero-image-container {
+    order: 0;
+    width: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 250px;
+  }
+
+  .hero-content .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-content .para {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .skillsets {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .skills-cards {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+    .skillsets {
+      margin-top: 2rem;
+    }
+
+    .skillsets h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .copyright {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+  .skills-wrapper .heading {
+    font-size: 2rem;
+  }
+
+  .skillsets {
+    margin-top: 1rem;
+  }
+
+  .skillsets h2 {
+    font-size: 1.5rem;
+  }
+}

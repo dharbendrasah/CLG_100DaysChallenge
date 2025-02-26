@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+  <title>Contact Us Page</title>
+  <link rel="icon" href="./contact-image.png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <div id="main">
+    <div class="container">
+      <div class="left">
+        <img class="contact-image" src="./contact-image.png" alt="contact-image" />
+      </div>
+
+      <div class="right">
+        <h1 class="heading">Send us a Message</h1>
+
+        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="cb6fd719-4ad5-44f1-b141-f120fa493862">
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <input type="hidden" name="subject" value="Someone Sent a Message From Contact Us Page">
+          <input type="hidden" name="from_name" value="Contact Us Page">
+
+          <input required type="text" name="name" placeholder="Enter your name" />
+          <input required type="email" name="email" placeholder="Enter your email" />
+          <textarea required rows="3" name="message" placeholder="Enter your message"></textarea>
+          <button>Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

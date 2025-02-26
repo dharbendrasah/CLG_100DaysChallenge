@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px 0 rgba(107, 106, 106, 0.55);
+}
+
+.header {
+    height: 110px;
+    background-color: orangered;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative; 
+    margin-top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgba(255, 255, 255, 0.626);
+}
+
+.content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.desc {
+    color: gray;
+}
+
+.social-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 1rem 0;
+}
+
+.social-profile a {
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+.social-profile a:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+}
+
+.social-profile a img {
+    width: 22px;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+    font-weight: 500;
+    color: #323232;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.call-btn {
+    background-color: rgb(72, 149, 225);
+    color: white;
+    transition: 0.3s linear;
+}
+
+.call-btn:hover {
+    background-color: #F0F0F0;
+    color: #323232
+}
+
+.msg-btn {
+    transition: 0.3s linear;
+}
+
+.msg-btn:hover {
+    background-color: rgb(72, 149, 225);
+    color: white;
+}
