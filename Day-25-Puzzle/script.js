@@ -100,6 +100,7 @@ function playAgain() {
   playAgainBtn.classList.remove("show");
   playAgainBtn.classList.add("hide");
   title.textContent = "PUZZLE";
+  container.removeEventListener("click", sweetAlert);
 }
 playAgainBtn.addEventListener("click", playAgain);
 
