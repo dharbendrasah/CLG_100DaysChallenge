@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.heart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  filter: drop-shadow(0 0 0.90rem crimson);
+  animation: moveHeart 1s ease-in;
+}
+
+@keyframes moveHeart {
+  from {
+    transform: translate(0px) scale(1) rotate(0);
+  } 
+  to {
+    transform: translateY(-700px) scale(0) rotate(360deg);
+  }
+}
